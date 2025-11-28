@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Card Vault — Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="HoopVault.png" alt="logo" class="logo">
+      <div>
+        <h1>HoopVault</h1>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Cards</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Register</a>
+    </nav>
+    <button id="menu-btn" class="menu-btn">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="product-header">
+      <h2>All Cards</h2>
+      <div class="search-row">
+        <input id="search" placeholder="Search by player or price..." />
+        <select id="sort">
+          <option value="default">Sort: Featured</option>
+          <option value="price-asc">Price (low → high)</option>
+          <option value="price-desc">Price (high → low)</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+      <!-- 20 product cards -->
+      <!-- Use IDs card-01 .. card-20 -->
+      <!-- Placeholder images via via.placeholder.com (replace with real images later) -->
+      <article class="product" id="card-01" data-price="18500" data-title="LeBron James 2003">
+        <div class="product-inner">
+          <img src="Product Images/LebronRookie.jpg" alt="LeBron James">
+          <div class="product-info">
+            <h4>LeBron James — 2003 Rookie</h4>
+            <p class="desc">Sample replica rookie card; premium gloss finish.</p>
+            <p class="price">₱18,500.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-02" data-price="9200" data-title="Kevin Durant 2007">
+        <div class="product-inner">
+          <img src="Product Images/KevinDurant.jpg" alt="Kevin Durant">
+          <div class="product-info">
+            <h4>Kevin Durant — 2007 Special</h4>
+            <p class="desc">Limited serial-numbered print.</p>
+            <p class="price">₱9,200.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-03" data-price="7500" data-title="Stephen Curry 2009">
+        <div class="product-inner">
+          <img src="Product Images/Curry.jpg" alt="Stephen Curry">
+          <div class="product-info">
+            <h4>Stephen Curry — 2009 Rookie</h4>
+            <p class="desc">Clean edges and holo foil.</p>
+            <p class="price">₱7,500.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-04" data-price="16000" data-title="Kobe Bryant 1996">
+        <div class="product-inner">
+          <img src="Product Images/Kobe.jpg" alt="Kobe Bryant">
+          <div class="product-info">
+            <h4>Kobe Bryant — 1996 Rookie</h4>
+            <p class="desc">Collector's tribute edition (replica).</p>
+            <p class="price">₱16,000.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-05" data-price="4200" data-title="Giannis Antetokounmpo 2013">
+        <div class="product-inner">
+          <img src="Product Images/RookieGiannis.jpg" alt="Giannis">
+          <div class="product-info">
+            <h4>Giannis — 2013 Rookie</h4>
+            <p class="desc">Good condition, sharp corners.</p>
+            <p class="price">₱4,200.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-06" data-price="2600" data-title="Luka Doncic 2018">
+        <div class="product-inner">
+          <img src="Product Images/Luka.jpg" alt="Luka">
+          <div class="product-info">
+            <h4>Luka Dončić — 2018 Rookie</h4>
+            <p class="desc">Popular modern rookie print.</p>
+            <p class="price">₱2,600.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-07" data-price="3900" data-title="Zion Williamson 2019">
+        <div class="product-inner">
+          <img src="Product Images/Zion.jpg" alt="Zion">
+          <div class="product-info">
+            <h4>Zion Williamson — 2019 Rookie</h4>
+            <p class="desc">High gloss, near-mint condition.</p>
+            <p class="price">₱3,900.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-08" data-price="1200" data-title="Jayson Tatum 2017">
+        <div class="product-inner">
+          <img src="Product Images/Tatum.jpg" alt="Tatum">
+          <div class="product-info">
+            <h4>Jayson Tatum — 2017 Rookie</h4>
+            <p class="desc">Nice centering, good buy for collectors.</p>
+            <p class="price">₱1,200.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-09" data-price="3200" data-title="Kawhi Leonard 2011">
+        <div class="product-inner">
+          <img src="Product Images/Kawhi.jpg" alt="Kawhi">
+          <div class="product-info">
+            <h4>Kawhi Leonard — 2011 Rookie</h4>
+            <p class="desc">Limited run parallel.</p>
+            <p class="price">₱3,200.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-10" data-price="800" data-title="Jrue Holiday 2013">
+        <div class="product-inner">
+          <img src="Product Images/Murray.jpg" alt="Murray">
+          <div class="product-info">
+            <h4>Keegan Murray — 2022</h4>
+            <p class="desc">Everyday collector card.</p>
+            <p class="price">₱800.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-11" data-price="2200" data-title="Damian Lillard 2012">
+        <div class="product-inner">
+          <img src="Product Images/Lillard.jpg" alt="Lillard">
+          <div class="product-info">
+            <h4>Damian Lillard — 2012 Rookie</h4>
+            <p class="desc">Well-preserved sample.</p>
+            <p class="price">₱2,200.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-12" data-price="1950" data-title="Anthony Davis 2013">
+        <div class="product-inner">
+          <img src="Product Images/Davis.jpg" alt="AD">
+          <div class="product-info">
+            <h4>Anthony Davis — 2013 Rookie</h4>
+            <p class="desc">Classic style, great for display.</p>
+            <p class="price">₱1,950.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-13" data-price="3100" data-title="Russell Westbrook 2008">
+        <div class="product-inner">
+          <img src="Product Images/Westbrook.jpg" alt="Westbrook">
+          <div class="product-info">
+            <h4>Russell Westbrook — 2008 Rookie</h4>
+            <p class="desc">High-energy vintage print.</p>
+            <p class="price">₱3,100.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-14" data-price="1400" data-title="Chris Paul 2005">
+        <div class="product-inner">
+          <img src="Product Images/Cp3.jpg" alt="Chris Paul">
+          <div class="product-info">
+            <h4>Chris Paul — 2005 Special</h4>
+            <p class="desc">Nice centering and gloss.</p>
+            <p class="price">₱1,400.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-15" data-price="2700" data-title="Paul George 2010">
+        <div class="product-inner">
+          <img src="Product Images/Shaq.jpg" alt="Shaq">
+          <div class="product-info">
+            <h4>Shaquille O'neal — 1992 Rookie</h4>
+            <p class="desc">Collector's parallel edition.</p>
+            <p class="price">₱2,700.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-16" data-price="2100" data-title="Jimmy Butler 2011">
+        <div class="product-inner">
+          <img src="Product Images/LaMelo.jpg" alt="LaMelo">
+          <div class="product-info">
+            <h4>LaMelo Ball — 2020 Rookie</h4>
+            <p class="desc">Near-mint collector sample.</p>
+            <p class="price">₱2,100.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-17" data-price="600" data-title="Malcolm Brogdon 2016">
+        <div class="product-inner">
+          <img src="Product Images/Edwards.jpg" alt="Ant">
+          <div class="product-info">
+            <h4>Anthony Edwards — 2020 Rookie</h4>
+            <p class="desc">Limited run parallel.</p>
+            <p class="price">₱3000.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-18" data-price="4800" data-title="Karl-Anthony Towns 2015">
+        <div class="product-inner">
+          <img src="Product Images/Towns.jpg" alt="KAT">
+          <div class="product-info">
+            <h4>Karl-Anthony Towns — 2015 Rookie</h4>
+            <p class="desc">Nice color and centering.</p>
+            <p class="price">₱4,800.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-19" data-price="3300" data-title="Paul Pierce 1999">
+        <div class="product-inner">
+          <img src="Product Images/Pierce.jpg" alt="Pierce">
+          <div class="product-info">
+            <h4>Paul Pierce — 1998 Classic</h4>
+            <p class="desc">Vintage look, classic card.</p>
+            <p class="price">₱3,300.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" id="card-20" data-price="1250" data-title="Devin Booker 2015">
+        <div class="product-inner">
+          <img src="Product Images/Booker.jpg" alt="Booker">
+          <div class="product-info">
+            <h4>Devin Booker — 2015 Rookie</h4>
+            <p class="desc">Nice for entry-level collectors.</p>
+            <p class="price">₱1,250.00</p>
+            <div class="actions">
+              <a href="#" class="btn small">View</a>
+              <button class="btn small ghost">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>HoopVault • Final Requirements</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

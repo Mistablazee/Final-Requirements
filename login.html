@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HoopVault — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="HoopVault.png" alt="logo" class="logo">
+      <div><h1>HoopVault</h1></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Cards</a> <a href="login.html" class="active">Login</a>
+      <a href="registration.html">Register</a>
+    </nav>
+    <button id="menu-btn" class="menu-btn">☰</button>
+  </header>
+
+  <main class="container narrow">
+    <h2>Login</h2>
+    <form id="login-form" class="form">
+      <label>Username
+        <input type="Username" id="login-username" required placeholder="">
+      </label>
+      <label>Password
+        <input type="password" id="login-pass" required placeholder="••••••••">
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Sign in</button>
+        <a href="registration.html" class="btn ghost">Create account</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>HoopVault • Final Requirements</p>
+  </footer>
+
+  <script>
+   document.getElementById('login-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  location.href = 'product.html'; 
+});
+  </script>
+</body>
+</html>
