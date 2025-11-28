@@ -1,4 +1,4 @@
-/* ===== Global ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +7,10 @@
 }
 
 body {
-  background: #F5F5F5; /* 👉 LIGHT GRAY */
+  background: #F5F5F5; 
   color: #222;
 }
 
-/* ===== Header ===== */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -61,7 +60,7 @@ body {
 
 .nav a.active,
 .nav a:hover {
-  color: #ff6600; /* accent color */
+  color: #ff6600; 
 }
 
 
@@ -264,4 +263,5 @@ body {
   .menu-btn {
     display: block;
   }
+
 }
